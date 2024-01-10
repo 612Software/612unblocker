@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- Train your brain with these mind-blowing math videos and problems. Calcium --!>
+<style>
+h1, p {
+  font-family:verdana;
+}
+.button8 {
+  padding: 8px 34px;
+  border: none;
+  background-color:black;
+  color:white;
+  font-family:verdana;
+  position:absolute;
+  right:0;
+  bottom:0;
+}
+.button67 {
+  padding: 3px 34px;
+  border: none;
+  background-color:black;
+  color:white;
+  font-family:verdana;
+  position:absolute;
+}
+</style>
+
+<center>
+
+<iframe src="frame.html" width="100%" height="600px" id="iframeId"></iframe>
+</center>
+<BUTTON class="button8">Enter/Exit Fullscreen</button>
+<center>
+<input type="text" placeholder="URL" id="urlid"></input>
+<button onClick="iframeSrc();" class="button67">Visit</button>
+</center>
+
+<script>
+var f11id = 0;
+
+function iframeSrc() {
+  var urlfinalid = document.getElementById("urlid").value;
+  document.getElementById("iframeId").src = urlfinalid;
+  alert(urlfinalid);
+}
+</script>
+ 
+</head>
+</html>
